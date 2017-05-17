@@ -1,0 +1,194 @@
+<class-diagram version="0.9.86" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <class corner="BOTTOM_RIGHT" language="java" name="org.utn.frro.ds.reverseengineering.rrhh.BusquedaLaboral" 
+    project="reverseengineering" 
+    file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/BusquedaLaboral.java" binary="false">    
+    <position x="148" y="375" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="org.utn.frro.ds.reverseengineering.rrhh.Candidato" 
+    project="reverseengineering" 
+    file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/Candidato.java" binary="false">    
+    <position x="822" y="263" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="org.utn.frro.ds.reverseengineering.rrhh.CatalogoBusquedaLaboral" 
+    project="reverseengineering" 
+    file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/CatalogoBusquedaLaboral.java" 
+    binary="false">    
+    <position x="123" y="187" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="org.utn.frro.ds.reverseengineering.rrhh.CatalogoCandidatos" 
+    project="reverseengineering" 
+    file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/CatalogoCandidatos.java" 
+    binary="false">    
+    <position x="723" y="58" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="org.utn.frro.ds.reverseengineering.rrhh.Conocimiento" 
+    project="reverseengineering" 
+    file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/Conocimiento.java" binary="false">    
+    <position x="537" y="442" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" 
+    name="org.utn.frro.ds.reverseengineering.rrhh.ControladorBusquedaCandidatos" project="reverseengineering" 
+    file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/ControladorBusquedaCandidatos.java" 
+    binary="false">    
+    <position x="278" y="58" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="org.utn.frro.ds.reverseengineering.rrhh.Entrevista" 
+    project="reverseengineering" 
+    file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/Entrevista.java" binary="false">    
+    <position x="443" y="248" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <association>    
+    <source project="reverseengineering" name="org.utn.frro.ds.reverseengineering.rrhh.Entrevista" 
+      file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/Entrevista.java" binary="false" 
+      navigable="false">      
+      <attribute name="candidato"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="reverseengineering" name="org.utn.frro.ds.reverseengineering.rrhh.Candidato" 
+      file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/Candidato.java" binary="false" 
+      navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="reverseengineering" name="org.utn.frro.ds.reverseengineering.rrhh.ControladorBusquedaCandidatos" 
+      file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/ControladorBusquedaCandidatos.java" 
+      binary="false" navigable="false">      
+      <attribute name="listaCandidatos"/>      
+      <multiplicity minimum="0" maximum="2147483647"/>    
+    </source>    
+    <target project="reverseengineering" name="org.utn.frro.ds.reverseengineering.rrhh.Candidato" 
+      file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/Candidato.java" binary="false" 
+      navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="reverseengineering" name="org.utn.frro.ds.reverseengineering.rrhh.Candidato" 
+      file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/Candidato.java" binary="false" 
+      navigable="false">      
+      <attribute name="conocimientosCandidato"/>      
+      <multiplicity minimum="0" maximum="2147483647"/>    
+    </source>    
+    <target project="reverseengineering" name="org.utn.frro.ds.reverseengineering.rrhh.Conocimiento" 
+      file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/Conocimiento.java" binary="false" 
+      navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="reverseengineering" name="org.utn.frro.ds.reverseengineering.rrhh.CatalogoCandidatos" 
+      file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/CatalogoCandidatos.java" 
+      binary="false" navigable="false">      
+      <attribute name="candidatos"/>      
+      <multiplicity minimum="0" maximum="2147483647"/>    
+    </source>    
+    <target project="reverseengineering" name="org.utn.frro.ds.reverseengineering.rrhh.Candidato" 
+      file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/Candidato.java" binary="false" 
+      navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="reverseengineering" name="org.utn.frro.ds.reverseengineering.rrhh.BusquedaLaboral" 
+      file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/BusquedaLaboral.java" 
+      binary="false" navigable="false">      
+      <attribute name="entrevistas"/>      
+      <multiplicity minimum="0" maximum="2147483647"/>    
+    </source>    
+    <target project="reverseengineering" name="org.utn.frro.ds.reverseengineering.rrhh.Entrevista" 
+      file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/Entrevista.java" binary="false" 
+      navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="reverseengineering" name="org.utn.frro.ds.reverseengineering.rrhh.ControladorBusquedaCandidatos" 
+      file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/ControladorBusquedaCandidatos.java" 
+      binary="false" navigable="false">      
+      <attribute name="cbl"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="reverseengineering" name="org.utn.frro.ds.reverseengineering.rrhh.CatalogoBusquedaLaboral" 
+      file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/CatalogoBusquedaLaboral.java" 
+      binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="reverseengineering" name="org.utn.frro.ds.reverseengineering.rrhh.CatalogoBusquedaLaboral" 
+      file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/CatalogoBusquedaLaboral.java" 
+      binary="false" navigable="false">      
+      <attribute name="busquedasLabrolares"/>      
+      <multiplicity minimum="0" maximum="2147483647"/>    
+    </source>    
+    <target project="reverseengineering" name="org.utn.frro.ds.reverseengineering.rrhh.BusquedaLaboral" 
+      file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/BusquedaLaboral.java" 
+      binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="reverseengineering" name="org.utn.frro.ds.reverseengineering.rrhh.ControladorBusquedaCandidatos" 
+      file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/ControladorBusquedaCandidatos.java" 
+      binary="false" navigable="false">      
+      <attribute name="bl"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="reverseengineering" name="org.utn.frro.ds.reverseengineering.rrhh.BusquedaLaboral" 
+      file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/BusquedaLaboral.java" 
+      binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="reverseengineering" name="org.utn.frro.ds.reverseengineering.rrhh.ControladorBusquedaCandidatos" 
+      file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/ControladorBusquedaCandidatos.java" 
+      binary="false" navigable="false">      
+      <attribute name="cc"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="reverseengineering" name="org.utn.frro.ds.reverseengineering.rrhh.CatalogoCandidatos" 
+      file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/CatalogoCandidatos.java" 
+      binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="reverseengineering" name="org.utn.frro.ds.reverseengineering.rrhh.BusquedaLaboral" 
+      file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/BusquedaLaboral.java" 
+      binary="false" navigable="false">      
+      <attribute name="conocimientodsBuscados"/>      
+      <multiplicity minimum="0" maximum="2147483647"/>    
+    </source>    
+    <target project="reverseengineering" name="org.utn.frro.ds.reverseengineering.rrhh.Conocimiento" 
+      file="/reverseengineering/src/main/java/org/utn/frro/ds/reverseengineering/rrhh/Conocimiento.java" binary="false" 
+      navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" package="true" initial-value="false" signature="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<project name="re" default="javadoc-src" basedir=".">
+
+    <property name="javac.debug" value="yes"/>
+    <property name="src.dir" value="src/main/java"/>
+    <property name="test.dir" value="src/test/java"/>
+    <property name="lib.dir" value="lib"/>
+    <property name="res.dir" value="res"/>
+    <property name="build.dir" value="classes"/>
+    <property name="dist.dir" value="dist"/>
+    <property name="javadoc.dir" value="${dist.dir}/javadoc"/>
+    <property name="axis.dir" value="axis"/>
+    <property name="junit.reports.dir" value="${dist.dir}/junit-reports"/>
+    <property name="jsp.precompile" value = "false"/>
+    
+    <target name="javadoc-src" description="Generate HTML sources">
+    	 <taskdef
+    	            name="java2html"
+    	            classname="de.java2html.anttasks.Java2HtmlTask"
+    	            classpath="${lib.dir}/java2html.jar"/>
+        <!-- Generate highlighted Java source in HTML -->
+
+        <java2html srcdir="${src.dir}" destdir="${javadoc.dir}/source" includes="**/*.java"
+            style="kawa" showLineNumbers="true" showFileName="true" showTableBorder="true" outputFormat="rtf" />
+        
+    </target>
+
+
+	
+</project>
